@@ -1,0 +1,31 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title ContactUs
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='./fonts/material-design-iconic-font/css/material-design-iconic-font.min.css')
+  link(rel='stylesheet' href='./css/style.css')
+body
+  .wrapper
+    canvas#canvas
+    .inner
+      form(action='/contact' method='post')
+        h3 Contact Us
+        p
+          | Fill the form below to get in touch with us.
+        label.form-group
+          input.form-control(type='text' required='' name='name')
+          span Your Name
+          span.border
+        label.form-group
+          input.form-control(type='text' required='' name='mail')
+          span(for='') Your Mail
+          span.border
+        label.form-group
+          textarea.form-control(name='message' id='' required='')
+          span(for='') Your Message
+          span.border
+        button
+          | Submit 
+          i.zmdi.zmdi-arrow-right
+  script(src="./js/particleBG.js")         

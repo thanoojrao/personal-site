@@ -1,0 +1,130 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Thanooj
+  meta(name='viewport' content='width=device-width')
+  link(rel='stylesheet' href='./fonts/material-design-iconic-font/css/material-design-iconic-font.min.css') 
+  script(src="https://use.fontawesome.com/699a85e728.js")
+  link(rel='stylesheet' href='./css/home.css')
+  link(rel='stylesheet' href='./css/bubble.css')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js')
+  script(src="./js/autoScroll.js") 
+  script(src="./js/home.js")
+  script(src="./js/bubble.js")
+body
+    nav.nav
+      .nav-menu.flex-row
+         .nav-brand
+           a.text-gray(href='#') Ahoy &#129312 
+         #toggle-collapse
+           .toggle-icons
+             i.fa.fa-bars
+         div
+           ul.nav-items
+             li.nav-link
+               a(onclick = "autoScrollTo('home')") Home
+             li.nav-link
+               a(onclick = "autoScrollTo('skills')") Skills
+             li.nav-link
+               a(onclick = "autoScrollTo('education')") Education
+             li.nav-link
+               a(href='/contact') Contact
+    
+    section#stage
+      figure.ball.bubble
+    div#home
+    div.imgBG.imgBG1
+    div.imgBG.imgBG2
+    div.imgBG.imgBG3
+    div.bannerContent
+        p.bannerIntro --- HI I'M ---
+        p.bannerName THANOOJ <br> LINGAMPALLY
+        p.bannerText want to know about my <span> </span>
+        p.bannerText Just let the bubble fall freely by rolling down
+        button.bannerButton Scroll down
+    
+    script(src="./js/scroll-out.js")
+    div#skills
+    div.skillsContent
+      p.skillHeading SKILLS
+      ul.skillsList
+        li.skillLine
+          p.skillName   HTML
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+        li.skillLine
+          p.skillName   CSS
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+        li.skillLine
+          p.skillName   JAVASCRIPT
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+            i.zmdi.zmdi-star-outline
+        li.skillLine
+          p.skillName EXPRESS.JS
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+            i.zmdi.zmdi-star-outline
+        li.skillLine
+          p.skillName CATIA
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+            i.zmdi.zmdi-star-outline
+        li.skillLine
+          p.skillName PYTHON
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+            i.zmdi.zmdi-star-outline
+        li.skillLine
+          p.skillName C PROGRAMMING
+          p.skillRating 
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star
+            i.zmdi.zmdi-star-outline
+            i.zmdi.zmdi-star-outline
+            i.zmdi.zmdi-star-outline
+    div#education
+    div.educationContent
+      div.collegeImg
+      p.educationInfo <span>Pursuing:</span> <br> B.Tech <br> Mechanical Engineering <br> NIT Durgapur.
+    footer
+      div.footerContent
+        button.contactBtn(onclick="/contact") Contact
+        div.media
+          a(href="http://wa.me/+919390145187") 
+            i.fab.fa-whatsapp
+          a(href="http://instagram.com/thanooj_rao/")  
+            i.fab.fa-instagram
+          a(href="http://www.linkedin.com/in/thanooj-lingampally-0305ab1a9") 
+            i.fab.fa-linkedin
+          a(href="http://facebook.com/thanooj.lingampally/")
+            i.fab.fa-facebook
+
+
+
+
+        
+
+
+    
